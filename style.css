@@ -1,0 +1,69 @@
+ol.progtrckr {
+    margin: 0;
+    padding: 0;
+    list-style-type none;
+}
+ol.progtrckr li {
+    display: inline-block;
+    line-height: 3em;
+    text-align: right;
+}
+ol.progtrckr[data-progtrckr-steps="2"] li { width: 49%; }
+ol.progtrckr[data-progtrckr-steps="3"] li { width: 33%; }
+ol.progtrckr[data-progtrckr-steps="4"] li { width: 24%; }
+ol.progtrckr[data-progtrckr-steps="5"] li { width: 19%; }
+ol.progtrckr[data-progtrckr-steps="6"] li { width: 16%; }
+ol.progtrckr[data-progtrckr-steps="7"] li { width: 14%; }
+ol.progtrckr[data-progtrckr-steps="8"] li { width: 12%; }
+ol.progtrckr[data-progtrckr-steps="9"] li { width: 11%; }
+ol.progtrckr li.progtrckr-done {
+    color: rgb(80, 150, 0);
+    border-bottom: 4px solid rgb(80, 150, 0);
+}
+ol.progtrckr li.progtrckr-todo {
+    color: silver; 
+    border-bottom: 4px solid silver;
+}
+ol.progtrckr li.progtrckr-curr {
+    color: rgb(150, 180, 150); 
+    border-bottom: 4px solid rgb(150, 180, 150);
+}
+ol.progtrckr li:after {
+    content: "\00a0\00a0";
+}
+ol.progtrckr li:before {
+    position: relative;
+    bottom: -1.35em;
+    float: left;
+    left: 100%;
+    line-height: 1.5em;
+    font-size: 1.5em;
+    border-radius: 1.2em;
+    border: none;
+    height: 1.5em;
+    width: 1.5em;
+    text-align: center;
+}
+ol.progtrckr li.progtrckr-done:before {
+    content: "\2713";
+    color: white;
+    background-color: rgb(80, 150, 0);
+}
+ol.progtrckr li.progtrckr-curr:before {
+    content: "";
+    color: white;
+    background-color: rgb(150, 180, 150);
+}
+ol.progtrckr li.progtrckr-todo:before {
+    content: "";
+    color: silver;
+    background-color: white;
+    border: 2px solid silver;
+}
+#wpue-general {
+    background: url('http://uemotion.com/images/talkie/happy.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    background-size: 15% auto;
+}
